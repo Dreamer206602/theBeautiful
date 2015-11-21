@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.fantastic3.thebeautiful.fragments.MallFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/mall_frg_relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+        <!-- 我的商城-->
+        <ImageView
+            android:id="@+id/mall_frg_iv_MyMall"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <TextView
+            android:id="@+id/mall_frg_tv_MyMall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/mall_frg_iv_MyMall"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="xxx"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            />
+
+
+        <!-- 购物攻略-->
+        <ImageView
+            android:id="@+id/mall_frg_iv_ShoppingGuide"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/mall_frg_iv_MyMall"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <TextView
+            android:id="@+id/mall_frg_tv_ShoppingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/mall_frg_iv_ShoppingGuide"
+            android:layout_below="@id/mall_frg_iv_ShoppingGuide"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@id/mall_frg_tv_MyMall"
+            android:layout_toRightOf="@id/mall_frg_tv_MyMall"
+            android:text="xxx"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            />
+
+
+        <!-- 双十一主会场-->
+        <ImageView
+            android:id="@+id/mall_frg_iv_MainVenue"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/mall_frg_iv_ShoppingGuide"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <TextView
+            android:id="@+id/mall_frg_tv_MainVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mall_frg_iv_MainVenue"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/mall_frg_tv_ShoppingGuide"
+
+            android:text="xxx"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            />
+
+
+        <!-- 海外馆-->
+        <ImageView
+            android:id="@+id/mall_frg_iv_OverSeas"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/mall_frg_iv_MainVenue"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <TextView
+            android:id="@+id/mall_frg_tv_OverSeas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mall_frg_iv_OverSeas"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/mall_frg_tv_MainVenue"
+            android:text="xxx"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            />
+
+
+        <!-- 品牌馆-->
+        <ImageView
+            android:id="@+id/mall_frg_iv_Brand"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="15dp"
+            android:layout_toRightOf="@id/mall_frg_iv_OverSeas"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <TextView
+            android:id="@+id/mall_frg_tv_Brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mall_frg_iv_Brand"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/mall_frg_tv_OverSeas"
+            android:text="xxx"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

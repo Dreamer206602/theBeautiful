@@ -1,0 +1,10 @@
+POST http://app.dameiren.com/bl/list.do HTTP/1.1
+Content-Length: 201
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+uid=48d2b904-a291-4591-baa3-696c53b003f5&orderBy=1&reqTime=1447071389997&pageSize=3&versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&pageNum=1&operatorUid=48d2b904-a291-4591-baa3-696c53b003f5
+
+-------------------------------------------------------------
+

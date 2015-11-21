@@ -1,0 +1,17 @@
+GET http://p.bokecc.com/servlet/app/playinfo?dt=Custom+Phone+-+4.4.4+-+API+19+-+768x1280&osversion=19
+&sh=1232&sn=unknown&sw=768&userid=2EEAA77A0153E6C3
+&version=20140214&videoid=AF1A9F65846E01059C33DC5901307461
+&time=1447057836&hash=fd6e9ea417eb4f0805e6be3c2c624cc6 HTTP/1.1
+Host: p.bokecc.com
+Connection: Keep-Alive
+User-Agent: Dalvik/1.6.0 (Linux; Android 4.4.4; Genymotion Build/KTU84P)
+
+------------------------------------------------------------------------------------------------------
+HTTP/1.1 200 OK
+Server: nginx/0.7.61
+Date: Mon, 09 Nov 2015 08:30:39 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Content-Length: 858
+
+{"response":{"result":1,"UPID":"5328641447057839961","video":{"status":0,"statusinfo":"正常","title":"美发&护肤两不误~美妆姐妹淘的海淘清单","shareurl":"","defaultquality":20},"qualities":[{"quality":20,"desp":"高清","copies":[{"playurl":"http://bm1.31.play.bokecc.com/flvs/ca/QxFvm/uJPuufRIQ7-20.mp4?t=1447065039&key=94B3F5D529DD4D28596E21C14ACAF84F","priority":100},{"playurl":"http://bm1.33.play.bokecc.com/flvs/ca/QxFvm/uJPuufRIQ7-20.mp4?t=1447065039&key=94B3F5D529DD4D28596E21C14ACAF84F","priority":99}]},{"quality":10,"desp":"清晰","copies":[{"playurl":"http://bm1.31.play.bokecc.com/flvs/ca/QxFvm/uJPuufRIQ7-10.mp4?t=1447065039&key=9C95C9A37131DC85906266115FEECC0B","priority":100},{"playurl":"http://cm12.c110.play.bokecc.com/flvs/ca/QxFvm/uJPuufRIQ7-10.mp4?t=1447065039&key=9C95C9A37131DC85906266115FEECC0B","priority":99}]}]}}

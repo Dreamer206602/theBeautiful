@@ -1,0 +1,78 @@
+package com.fantastic3.thebeautiful.widgets;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Bitmap;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.NinePatchDrawable;
+import android.util.AttributeSet;
+import android.widget.ImageView;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * Created by Administrator on 2015/11/10.
+ */
+public class CircleImage extends ImageView {
+    private Context context;
+    private int borderwidth = 0;
+    private int bordercolor = Color.GRAY;
+    private int defaultwindth = 0;
+    private int defaultheight = 0;
+
+    private int defaultColor=0xFFFFFFFF;
+    public CircleImage(Context context) {
+        super(context);
+        this.context = context;
+    }
+
+    public CircleImage(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        setAttributeSet(attrs);
+        this.context = context;
+    }
+
+    public CircleImage(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        this.context = context;
+        setAttributeSet(attrs);
+    }
+
+    private void setAttributeSet(AttributeSet attrs) {
+        TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CircleImage);
+        borderwidth = typedArray.getDimensionPixelSize(R.styleable.CircleImage_borderwindth, 0);
+        bordercolor = typedArray.getColor(R.styleable.CircleImage_bordercolor, Color.GRAY);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        Drawable drawable = getDrawable();
+        if (drawable == null) {
+            return;
+        }
+        if (getWidth() == 0 && getHeight() == 0) {
+            return;
+        }
+        this.measure(0, 0);
+        if (drawable.getClass() == NinePatchDrawable.class) {
+            return;
+        }
+        Bitmap b = ((BitmapDrawable) drawable).getBitmap();
+        Bitmap bitmap = b.copy(Bitmap.Config.ARGB_8888, true);
+        if (defaultheight == 0) {
+            defaultheight = getHeight();
+        }
+        if (defaultwindth == 0) {
+            defaultwindth = getWidth();
+        }
+        int radius=0;
+        if(bordercolor!=defaultColor){
+            radius=(defaultwindth<defaultheight?defaultwindth:defaultheight)/2-2*borderwidth;
+
+        }
+
+    }
+}

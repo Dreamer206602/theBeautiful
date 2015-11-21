@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+<View
+    android:layout_marginTop="25dp"
+    android:background="#ccc"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"/>
+    <View
+        android:layout_marginLeft="25dp"
+        android:background="#ccc"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:src="@mipmap/view_videolist_data"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="13dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:id="@+id/nowDate"
+        android:gravity="center"
+        android:text="11/10"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="70dp"
+
+        android:layout_width="80dp"
+        android:layout_height="20dp" />
+    <!--android:background="@drawable/view_video_list_databg"-->
+
+</RelativeLayout>

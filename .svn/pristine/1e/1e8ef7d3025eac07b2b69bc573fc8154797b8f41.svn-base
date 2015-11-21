@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:minHeight="200dp"
+                android:layout_margin="8dp"
+                android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/discover_frg_newest_frg_item_one_img"
+        android:src="@mipmap/beautiful"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/discover_frg_newest_frg_item_one_tv_title"
+        android:text="title=【纯干货】圣诞限量品来啦~~"
+        android:layout_width="match_parent"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/discover_frg_newest_frg_item_one_img"/>
+
+
+    <TextView
+        android:id="@+id/discover_frg_newest_frg_item_one_tv_nickName"
+        android:text="xiaoxuanxuan"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/discover_frg_newest_frg_item_one_tv_title"/>
+
+
+    <TextView
+        android:id="@+id/discover_frg_newest_frg_item_one_tv_watchNum"
+        android:text="123"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@mipmap/view_video_visit"
+        android:drawablePadding="3dp"
+        android:layout_below="@id/discover_frg_newest_frg_item_one_tv_title"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#CCC"/>
+
+
+
+</RelativeLayout>

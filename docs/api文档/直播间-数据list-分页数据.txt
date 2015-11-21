@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/video/live/list.do HTTP/1.1
+Content-Length: 108
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+uid=&versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&pageNum=2&operatorUid=&reqTime=1447057644372
+
+----------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:27:24 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"成功","status":0,"data":{"servertime":1447057644,"videos":{"tomorrow":[{"_id":"be95e422-6f8c-462a-8283-eae5af1f05c4","uid":"f202a29a-2f49-4243-9463-6da2c374528e","userInfo":{"open_video":"0","district":"普陀","jfNo":"0","is_master":"1","city":"上海","update_time":"1446783868","level":"10","head_img_url":"group1/M00/08/45/CgpFY1Y8K3yASwJfAACjN0Aq2bw259.jpg","nickname":"小茂","country":"中国","province":"上海","isQukHost":"1","create_time":"1435214457","birthday":"2015/08/03","qukHostSort":"0","description":"知名美妆护肤专家","sex":"1","experience":"0","uid":"f202a29a-2f49-4243-9463-6da2c374528e","isAdmin":0},"title":"【双11特辑】秋冬季护唇最佳方案+套组推荐！","content":"唇部干燥、开裂、唇纹加深，这些困扰是不是都令小美们烦恼呢。大家的好朋友小茂老师又来啦，这次要给小美们讲讲细节护肤——唇部护理。还有小茂老师的爱用唇部产品介绍给大家哦。","keyTag":"video_be95e422-6f8c-462a-8283-eae5af1f05c4","timerTag":"timer_be95e422-6f8c-462a-8283-eae5af1f05c4","tags":["唇妆","大美人的双十一"],"pic":"group1/M00/08/6C/CgpFY1Y_cD-AYNQtAAEtfh04jb8903.jpg","tapeId":"26F9A4187733A27F9C33DC5901307461","playPassword":null,"liveId":null,"liveNum":null,"flower":0,"shit":0,"createTime":1446998079,"updateTime":1447042270,"beginTime":1447084800,"endTime":1447243200,"isTop":0,"sortNo":0,"isBanner":0,"type":5,"videoType":3,"hasApplied":0,"provider":2,"playStatus":0,"applicantNum":0,"watchNum":0,"commentCount":0,"nowViewers":0,"duration":3431,"products":null,"publishTime":1447124400,"hasfinished":0,"disable":1}]},"picIp":"http://res.app.dameiren.com/"}}

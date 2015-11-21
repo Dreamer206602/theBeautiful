@@ -1,0 +1,16 @@
+package com.fantastic3.thebeautiful.httpRequest;
+
+/**
+ * Created by
+ * Author: wswenyue
+ * Email: wswenyue@163.com
+ * GitHub: https://github.com/wswenyue
+ * Date: 2015/11/10
+ */
+
+/**
+ * 这里放置一些常用的请求地址
+ * 比如说通用的请求，baseUrl等
+ */
+public class ApiClient {
+}

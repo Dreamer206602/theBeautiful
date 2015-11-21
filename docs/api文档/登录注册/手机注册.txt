@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/user/regByMobile.do HTTP/1.1
+Content-Length: 234
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+sign=b500785e5221bc1eede4d657346f63af&reqTime=1447059008767&appid=894d177b-8b0f-4aa4-88f0-7459be0772cf&versionId=100023&code=5402&regSource=0&password=294148946&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&mobile=17090070258&operatorUid=
+
+--------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:50:09 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"注册成功","status":0,"data":{"uid":"48d2b904-a291-4591-baa3-696c53b003f5","sex":0,"jfNo":0,"level":1,"is_master":0,"nickname":"小美126421","create_time":1447059009,"head_img_url":"images/nohead.jpg","experience":0}}

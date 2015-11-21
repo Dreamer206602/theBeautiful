@@ -1,0 +1,17 @@
+package com.fantastic3.thebeautiful.activites;
+
+import android.os.Bundle;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * 社区
+ */
+public class CommunityActivity extends BaseActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_community);
+    }
+}

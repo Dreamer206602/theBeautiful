@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.fantastic3.thebeautiful"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+<uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/beautiful"
+        android:label="@string/app_name"
+        android:name=".appliaction.TheBeautifulApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/MyTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+
+
+        </activity>
+
+        <activity android:name=".activites.PlayerActivity" />
+
+        <activity
+            android:name=".activites.SearchActivity"
+            android:parentActivityName=".activites.BaseActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.fantastic3.thebeautiful.activites.BaseActivity" />
+        </activity>
+        <activity android:name=".activites.GetPasswordActivity"/>
+        <activity android:name=".activites.LoginActivity"/>
+        <activity android:name=".activites.RegisterActivity"/>
+        <activity android:name=".activites.CommunityActivity" >
+        </activity>
+    </application>
+
+</manifest>

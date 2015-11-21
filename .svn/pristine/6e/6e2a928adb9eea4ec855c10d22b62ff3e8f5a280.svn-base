@@ -1,0 +1,72 @@
+package com.fantastic3.thebeautiful.fragments;
+
+
+import android.os.Bundle;
+
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import com.viewpagerindicator.TabPageIndicator;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+
+/**
+ * 直播的Fragment
+ */
+public class VideoFragment extends BaseFragment {
+    private static VideoFragment videoFragment;
+    private String[] TAB_NAMES;
+    private TabPageIndicator mIndicator;
+    private ViewPager mPager;
+    public VideoFragment() {
+    }
+
+
+    public static VideoFragment newInstance(){
+
+        if(videoFragment==null){
+            videoFragment=new VideoFragment();
+        }
+        return videoFragment;
+    }
+
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        TAB_NAMES=getActivity().getResources().getStringArray(R.array.TABLE_NAMES);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View ret=inflater.inflate(R.layout.fragment_video, container, false);
+        mIndicator= (TabPageIndicator) ret.findViewById(R.id.video_frg_indicator);
+        mPager= (ViewPager) ret.findViewById(R.id.video_frg_viewPager);
+
+        return ret;
+    }
+
+
+    class TabAdapter extends PagerAdapter{
+
+        @Override
+        public int getCount() {
+            return TAB_NAMES.length;
+        }
+
+        @Override
+        public boolean isViewFromObject(View view, Object object) {
+            return view==object;
+        }
+    }
+
+
+
+}

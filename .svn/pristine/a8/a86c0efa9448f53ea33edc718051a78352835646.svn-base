@@ -1,0 +1,42 @@
+package com.fantastic3.thebeautiful.fragments;
+
+
+import android.os.Bundle;
+
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+
+/**
+ * 发现的Fragment
+ */
+public class DiscoverFragment extends BaseFragment {
+
+    private static DiscoverFragment discoverFragment;
+
+    public static DiscoverFragment newInstance(){
+        if (discoverFragment == null) {
+            discoverFragment=new DiscoverFragment();
+        }
+        return  discoverFragment;
+    }
+
+    public DiscoverFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_discover, container, false);
+    }
+
+
+}

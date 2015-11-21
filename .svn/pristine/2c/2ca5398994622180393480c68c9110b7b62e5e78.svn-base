@@ -1,0 +1,17 @@
+package com.fantastic3.thebeautiful.appliaction;
+
+import android.app.Application;
+
+/**
+ * Created by
+ * Author: wswenyue
+ * Email: wswenyue@163.com
+ * GitHub: https://github.com/wswenyue
+ * Date: 2015/11/10
+ */
+
+/**
+ * 自己的Application 主要实现一些全局的初始化任务
+ */
+public class TheBeautifulApplication extends Application {
+}

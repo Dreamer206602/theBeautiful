@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/video/detail.do HTTP/1.1
+Content-Length: 146
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&isAdd=1&videoId=18e8a091-c250-45b0-99b3-9b71b99c7816&operatorUid=&reqTime=1447057835960
+
+------------------------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:30:36 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"成功","status":0,"data":{"video":{"_id":"18e8a091-c250-45b0-99b3-9b71b99c7816","uid":"2af8f2a0-3327-4447-a0e2-88c0d0441b1b","userInfo":{"province":"2","city":"2","birthday":"2015/06/17","head_img_url":"group1/M00/00/F1/CgpFY1WBVSWAVlKHAAD8W0yecWQ490.JPG","level":"2","uid":"2af8f2a0-3327-4447-a0e2-88c0d0441b1b","district":"2","description":"美发达人","gold":"0","jfNo":"0","is_master":"1","nickname":"海瑶","experience":"0","sex":"2","create_time":"1434539302","country":"2","age":"1","isAdmin":0,"open_video":0,"isQukHost":0,"qukHostSort":0},"title":"【双11特辑】美妆姐妹淘的美发护肤小秘诀","content":"有了双十一，剁手没关系！快快快~赶紧来看看美妆达人姐妹淘的双十一购物清单，全是海淘好货哟~","keyTag":"video_18e8a091-c250-45b0-99b3-9b71b99c7816","timerTag":"timer_18e8a091-c250-45b0-99b3-9b71b99c7816","tags":["双十一","发型","护肤","海淘","美发"],"pic":"group1/M00/08/71/CgpFY1ZAINKATRcVAAIMDRAgJwk853.jpg","tapeId":"AF1A9F65846E01059C33DC5901307461","playPassword":null,"liveId":null,"liveNum":null,"flower":0,"shit":0,"createTime":1447043283,"updateTime":1447045272,"beginTime":1446998400,"endTime":1447156800,"isTop":0,"sortNo":0,"isBanner":0,"type":5,"videoType":3,"hasApplied":0,"provider":2,"playStatus":0,"applicantNum":0,"watchNum":1582,"commentCount":127,"nowViewers":0,"duration":3483,"products":null,"publishTime":1447032600,"hasfinished":0,"disable":0},"picIp":"http://res.app.dameiren.com/"}}

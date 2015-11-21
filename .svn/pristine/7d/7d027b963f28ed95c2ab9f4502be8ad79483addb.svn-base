@@ -1,0 +1,197 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.fantastic3.thebeautiful.fragments.LeftFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@mipmap/view_menu_left_edit" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/view_menu_left_set" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="3"
+            android:src="@mipmap/avtar_menu_left_unlogin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="小美1233"
+            android:textColor="#f996b4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/level_menu_left"
+            android:padding="4dp"
+            android:text="LEV1"
+            android:textColor="#fff"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+        <View
+            android:layout_marginTop="20dp"
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_notice"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="大美人广播"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+    </LinearLayout>
+<!-- 下面是通知的布局-->
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_mynotice"
+                android:layout_width="45dp"
+                android:layout_height="45dp"/>
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="我的通知"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+<!--下面编辑个人资料-->
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_userinfo"
+                android:layout_width="45dp"
+                android:layout_height="45dp"  />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="编辑个人资料"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+<!--下面是我的主页-->
+
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_home"
+                android:layout_width="45dp"
+                android:layout_height="45dp"  />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="我的主页"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+<!--我的收藏-->
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_mystore"
+                android:layout_width="45dp"
+                android:layout_height="45dp" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="我的收藏"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+<!--我的关注-->
+
+        <View
+            android:background="#ccc"
+            android:layout_width="match_parent"
+            android:layout_height="1px"/>
+        <LinearLayout
+            android:background="@drawable/item_bg_menu_left"
+            android:padding="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@mipmap/view_menu_left_attention"
+                android:layout_width="45dp"
+                android:layout_height="45dp"  />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="我的关注"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

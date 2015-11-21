@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fantastic3.thebeautiful.activites.PlayerActivity"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        >
+
+        <com.fantastic3.thebeautiful.widgets.video.MyFullVideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#6e6e6e"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/aty_player_TopBar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_video_back"
+                />
+
+            <ImageView
+                android:id="@+id/aty_player_TopBar_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/aty_player_TopBar_collection"
+                android:src="@drawable/btn_video_transverse_share"
+                />
+
+            <ImageView
+                android:id="@+id/aty_player_TopBar_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/btn_video_transverse_star"
+                />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:background="#6e6e6e"
+            android:gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:scaleType="center"
+                android:src="@android:drawable/ic_media_pause"
+                />
+
+            <SeekBar
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:max="1000"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:progressDrawable="@drawable/po_seekbar"
+                android:secondaryProgress="500"
+                android:thumb="@drawable/btn_video_transverse_progress"
+                />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:src="@drawable/btn_video_screenfull"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:padding="2dp"
+        >
+
+        <com.fantastic3.thebeautiful.widgets.CircleImageView
+            android:id="@+id/aty_player_info_Iv_head"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            app:civ_border_color="@color/main_color"
+            app:civ_border_width="1dp"
+            />
+
+        <TextView
+            android:id="@+id/aty_player_info_Tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/aty_player_info_Iv_head"
+            android:text="AK魔法师"
+            android:textColor="#a000"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/aty_player_info_Tv_name"
+            android:background="@color/purple"
+            android:padding="2dp"
+            android:text="LEV12"
+            android:textColor="#fff"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/aty_player_info_Tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/aty_player_info_Iv_head"
+            android:text="昨天"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_aty_player_follow"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:text="+关注"
+            android:textColor="@color/main_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        />
+
+    <!-- <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:orientation="horizontal"
+         >
+
+
+
+
+
+       &lt;!&ndash;  <TextView
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="详情评论"
+             android:textSize="20sp"
+             />
+
+         <View
+             android:layout_width="2dp"
+             android:layout_height="match_parent"
+             android:background="#ccc"
+             />
+
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:text="推荐商品"
+             android:textSize="20sp"
+             />&ndash;&gt;
+     </LinearLayout>-->
+
+
+    <!--
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ccc"
+        />-->
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/aty_player_info_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/main_color"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/main_color"
+        app:tabTextColor="#000"
+        >
+
+    </android.support.design.widget.TabLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/aty_player_info_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+
+    </android.support.v4.view.ViewPager>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/emoji"
+            />
+
+        <EditText
+            android:id="@+id/aty_player_info_Et"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/bg_edittext"
+            android:drawableRight="@drawable/btn_wd_menu_write"
+            android:gravity="center_vertical"
+            android:hint="我要评论"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/aty_player_info_Tv_commentBtn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/main_color"
+            android:gravity="center"
+            android:padding="2dp"
+            android:text="发送"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

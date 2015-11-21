@@ -1,0 +1,13 @@
+package com.fantastic3.thebeautiful.bean;
+
+/**
+ * TheBeautiful
+ * Created by meluo
+ * on 2015/11/11.
+ */
+
+/**
+ * 直播的实体
+ */
+public class Live {
+}

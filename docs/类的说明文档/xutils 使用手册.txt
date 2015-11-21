@@ -1,0 +1,65 @@
+XUtils 使用手册
+1.GET请求
+ RequestParams params = new RequestParams("https://www.baidu.com/s");
+    params.setSslSocketFactory(...); // 设置ssl
+    params.addQueryStringParameter("wd", "xUtils");//后缀的拼接
+    x.http().get(params, new Callback.CommonCallback<String>() {
+        @Override
+        public void onSuccess(String result) {
+            Toast.makeText(x.app(), result, Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onError(Throwable ex, boolean isOnCallback) {
+            Toast.makeText(x.app(), ex.getMessage(), Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onCancelled(CancelledException cex) {
+            Toast.makeText(x.app(), "cancelled", Toast.LENGTH_LONG).show();
+        }
+
+        @Override
+        public void onFinished() {
+
+        }
+    });
+}
+
+2.POST 请求
+ public void testXutils() {
+        RequestParams requestParams = new RequestParams("https://www.baidu.com/s");//初始化URI
+        requestParams.addHeader("Cooki", "121323232ewadadwqeq1232123");//添加请求的头部信息
+        requestParams.addBodyParameter("name", "张三");//添加 请求信息
+
+        x.http().post(requestParams, new Callback.CommonCallback<String>() {
+            @Override
+            public void onSuccess(String s) {
+                //成功
+            }
+
+            @Override
+            public void onError(Throwable throwable, boolean b) {
+//失败
+            }
+
+            @Override
+            public void onCancelled(CancelledException e) {
+//关闭请求
+            }
+
+            @Override
+            public void onFinished() {
+//完成请求
+            }
+        });
+    }
+	
+	
+3.图片请求
+x.image().bind(imageView, url, imageOptions);
+x.image().bind(imageView, "file:///sdcard/test.gif", imageOptions);
+x.image().bind(imageView, "assets://test.gif", imageOptions);
+x.image().bind(imageView, url, imageOptions, new Callback.CommonCallback<Drawable>() {...});
+x.image().loadDrawable(url, imageOptions, new Callback.CommonCallback<Drawable>() {...});
+x.image().loadFile(url, imageOptions, new Callback.CommonCallback<File>() {...});

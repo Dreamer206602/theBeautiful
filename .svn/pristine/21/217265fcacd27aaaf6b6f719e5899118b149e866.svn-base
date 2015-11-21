@@ -1,0 +1,38 @@
+package com.fantastic3.thebeautiful.fragments;
+
+
+import android.os.Bundle;
+
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+
+/**
+ * 最新的Fragment
+ */
+public class TheNewFragment extends BaseFragment {
+
+
+    public TheNewFragment() {
+        // Required empty public constructor
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+
+        View ret=inflater.inflate(R.layout.fragment_the_new, container, false);
+        return ret;
+    }
+
+
+}

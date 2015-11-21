@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/cy/insertTopic.do HTTP/1.1
+Content-Length: 278
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+tags=&content=%E6%B1%82%E8%AF%95%E7%94%A8+%E3%80%82%E3%80%82%E3%80%82%E3%80%82%E2%98%BA&uid=48d2b904-a291-4591-baa3-696c53b003f5&picNames=&location=&reqTime=1447075361515&versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&operatorUid=48d2b904-a291-4591-baa3-696c53b003f5
+
+----------------------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 13:22:41 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"成功","status":0,"data":{"uid":"48d2b904-a291-4591-baa3-696c53b003f5","content":"求试用 。。。。☺","tags":"","picNames":"","location":"","reqTime":"1447075361515","topicId":"647b78af-6b9e-4cc3-b8f7-5d60cc685b16","versionId":"100023","deviceId":"567C86BF401A7F59C1F12CF75E8E37E2","operatorUid":"48d2b904-a291-4591-baa3-696c53b003f5"}}

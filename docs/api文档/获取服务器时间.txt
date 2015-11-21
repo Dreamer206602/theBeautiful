@@ -1,0 +1,15 @@
+GET http://p.bokecc.com/api/system/localtime?format=json HTTP/1.1
+Host: p.bokecc.com
+Connection: Keep-Alive
+User-Agent: Dalvik/1.6.0 (Linux; Android 4.4.4; Genymotion Build/KTU84P)
+
+--------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Server: nginx/0.7.61
+Date: Mon, 09 Nov 2015 08:30:36 GMT
+Content-Type: application/json;charset=UTF-8
+                                    Connection: keep-alive
+                                    Content-Length: 33
+
+{"system":{"time":1447057836948}}

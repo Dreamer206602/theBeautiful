@@ -1,0 +1,23 @@
+GET http://bm1.31.play.bokecc.com/flvs/ca/QxFvm/uJPuufRIQ7-20.mp4?t=1447065039&key=94B3F5D529DD4D28596E21C14ACAF84F&version=android_2.3.4 HTTP/1.1
+Host: bm1.31.play.bokecc.com
+Connection: keep-alive
+User-Agent: stagefright/1.2 (Linux;Android 4.4.4)
+Accept-Encoding: gzip,deflate
+
+-----------------------------------------------------------------------
+
+HTTP/1.1 302 Moved Temporarily
+Server: nginx/1.2.5
+Date: Mon, 09 Nov 2015 08:30:40 GMT
+Content-Type: text/html
+Content-Length: 160
+Connection: keep-alive
+Location: http://116.31.120.136:80/cm1/flvs/ca/QxFvm/uJPuufRIQ7-20.mp4?t=1447065039&key=94B3F5D529DD4D28596E21C14ACAF84F&version=android_2.3.4
+
+<html>
+<head><title>302 Found</title></head>
+<body bgcolor="white">
+<center><h1>302 Found</h1></center>
+<hr><center>nginx/1.2.5</center>
+</body>
+</html>

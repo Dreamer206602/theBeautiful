@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <!-- 头部分-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        >
+        <!-- 个人的头像 圆角图片-->
+        <ImageView
+            android:id="@+id/discover_frg_concerned_frg_myPic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/beautiful"/>
+
+        <!-- 个人的昵称-->
+        <TextView
+            android:id="@+id/discover_frg_concerned_frg_tv_nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/discover_frg_concerned_frg_myPic"
+            android:layout_toRightOf="@id/discover_frg_concerned_frg_myPic"
+            android:text="阿Fi头"/>
+
+        <!-- 个人的级别-->
+        <TextView
+            android:id="@+id/discover_frg_concerned_frg_tv_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@id/discover_frg_concerned_frg_tv_nickName"
+            android:background="#b611a0"
+            android:text="LEV12"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/discover_frg_concerned_frg_tv_care"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_classroom_unattention"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCC"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <!-- 中间的第一个部分-->
+    <RelativeLayout
+        android:id="@+id/video_frg_care_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- 图片-->
+            <ImageView
+                android:id="@+id/discover_frg_concerned_frg_pic"
+                android:src="@mipmap/view_menu_left_home"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"/>
+
+
+        </FrameLayout>
+
+        <!-- 标题-->
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:id="@+id/discover_frg_concerned_frg_tv_title"
+            android:layout_toRightOf="@id/frameLayout"
+            android:layout_marginLeft="8dp"
+            android:text="超简单步骤，两分钟扎出漂亮马尾辫!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/discover_frg_concern_frg_tv_createTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="06-17"
+            android:layout_marginLeft="8dp"
+            android:layout_alignBottom="@+id/frameLayout"
+            android:layout_alignLeft="@+id/discover_frg_concerned_frg_tv_title"
+            android:layout_alignStart="@+id/discover_frg_concerned_frg_tv_title"/>
+
+        <TextView
+            android:id="@+id/discover_frg_concerned_frg_tv_publishTime"
+            android:text="15:14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/frameLayout"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/discover_frg_concern_frg_tv_createTime"
+            />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+           />
+
+    </RelativeLayout>
+
+
+    <!-- 中间的第二个部分-->
+    <RelativeLayout
+        android:id="@+id/discover_frg_concerned_relative2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white">
+        <FrameLayout
+            android:id="@+id/frameLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!-- 图片-->
+            <ImageView
+                android:id="@+id/discover_frg_concerned_frg_pic2"
+                android:src="@mipmap/view_menu_left_home"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="fitXY"/>
+        </FrameLayout>
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:id="@+id/discover_frg_concerned_frg_tv_title2"
+            android:layout_toRightOf="@id/frameLayout2"
+            android:layout_marginLeft="8dp"
+            android:text="超简单步骤，两分钟扎出漂亮马尾辫!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/discover_frg_concern_frg_tv_createTime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="06-17"
+            android:layout_marginLeft="8dp"
+            android:layout_alignBottom="@+id/frameLayout2"
+            android:layout_alignLeft="@+id/discover_frg_concerned_frg_tv_title2"
+            android:layout_alignStart="@+id/discover_frg_concerned_frg_tv_title2"/>
+
+        <TextView
+            android:id="@+id/discover_frg_concerned_frg_tv_publishTime2"
+            android:text="15:14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/frameLayout2"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/discover_frg_concern_frg_tv_createTime2"
+            />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ccc"
+            />
+    </RelativeLayout>
+
+    <!-- 更多-->
+    <TextView
+        android:text="了解更多"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:drawableRight="@mipmap/btn_articlelist_more"
+        />
+
+
+</LinearLayout>

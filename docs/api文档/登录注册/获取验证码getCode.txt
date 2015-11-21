@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/user/getCode.do HTTP/1.1
+Content-Length: 202
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+sign=e5f4ae0455361a04d0e84c236c2833ea&source=1&reqTime=1447058974619&appid=894d177b-8b0f-4aa4-88f0-7459be0772cf&versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&mobile=17090070258&operatorUid=
+
+----------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:49:34 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"提交成功","status":0}

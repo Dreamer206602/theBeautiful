@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+                android:minHeight="200dp"
+                android:layout_margin="5dp">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 图片-->
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/video_frg_new_frg_img"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@mipmap/beautiful"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:src="@mipmap/btn_ic_video"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+        <!-- 时长-->
+        <TextView
+            android:id="@+id/video_frg_new_frg_tv_duration"
+            android:text="81:56"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="#81262426"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right|bottom"/>
+    </FrameLayout>
+
+    <!-- 标题-->
+    <!-- 左边还有个小图片没有添加-->
+    <TextView
+        android:id="@+id/video_frg_new_tv_title"
+        android:layout_below="@id/frameLayout"
+        android:textSize="15dp"
+        android:text="【双11特辑】零基础新手也能学会这个妆！"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:maxLines="2"
+        android:layout_marginLeft="15dp"
+        android:layout_height="wrap_content"/>
+
+    <!-- 内容-->
+    <TextView
+        android:id="@+id/video_frg_new_frg_tv_content"
+        android:layout_below="@id/video_frg_new_tv_title"
+        android:textSize="12dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:text="看似巧夺天工的妆容，其实比你想象的要简单太多，一些简单的基础美妆小工具，就能让你秒变女神。"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- 昵称-->
+    <TextView
+        android:id="@+id/video_frg_new_frg_tv_nickName"
+        android:layout_below="@id/video_frg_new_frg_tv_content"
+        android:text="阿FI头"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <!-- 关注数量-->
+    <TextView
+        android:id="@+id/video_frg_new_frg_tv_watchNum"
+        android:layout_below="@id/video_frg_new_frg_tv_content"
+        android:text="1234"
+        android:drawableLeft="@mipmap/view_video_visit"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"/>
+
+
+
+</RelativeLayout>

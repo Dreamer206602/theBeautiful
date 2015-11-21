@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.fantastic3.thebeautiful.activites.SearchActivity">
+<RelativeLayout
+    android:padding="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="45dp">
+    <ImageView
+        android:src="@drawable/btn_wd_common_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+    <TextView
+        android:textColor="#fe9dba"
+        android:textSize="18dp"
+        android:text="搜索"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+    <RelativeLayout
+       android:background="#eee"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/search_edit"
+            android:padding="10dp"
+            android:drawableLeft="@drawable/serach_btn"
+            android:background="@drawable/search_bg"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+           android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/btn_search_delete"
+            android:layout_alignRight="@+id/search_edit"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+    </RelativeLayout>
+<LinearLayout
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:text="全部"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_marginTop="10dp"
+        android:background="#ccc"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <com.fantastic3.thebeautiful.widgets.FloatLayout
+        android:id="@+id/floatPael"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.fantastic3.thebeautiful.widgets.FloatLayout>
+</LinearLayout>
+</LinearLayout>

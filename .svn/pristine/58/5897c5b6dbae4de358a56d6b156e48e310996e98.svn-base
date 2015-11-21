@@ -1,0 +1,30 @@
+package com.fantastic3.thebeautiful.widgets;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.LayoutInflater;
+import android.widget.FrameLayout;
+
+/**
+ * TheBeautiful
+ * Created by meluo
+ * on 2015/11/11.
+ */
+//图片轮播 的组件
+public class CarouselView extends FrameLayout{
+    private Context context;
+    public CarouselView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        this.context=context;
+        initView();
+    }
+
+    public CarouselView(Context context) {
+        super(context);
+        this.context=context;
+        initView();
+    }
+    private void initView(){
+      //  LayoutInflater.from(context).inflate()
+    }
+}

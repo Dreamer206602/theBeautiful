@@ -1,0 +1,1 @@
+include ':app', ':viewpagerindicator', ':xutils-3.0'

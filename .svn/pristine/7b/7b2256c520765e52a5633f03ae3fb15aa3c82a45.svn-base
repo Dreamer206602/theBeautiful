@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fafafa"
+    android:layout_height="230dp">
+<View
+    android:layout_marginLeft="25dp"
+    android:background="#ccc"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"/>
+    <ImageView
+        android:id="@+id/live_state_img"
+        android:src="@drawable/view_videolist_lubo"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <RelativeLayout
+       android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="-5dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/live_item_bg"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/live_state_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+      <com.fantastic3.thebeautiful.widgets.MyImageview
+          android:id="@+id/anchors_head"
+          android:src="@drawable/avatar_wd_admin"
+          android:layout_width="40dp"
+          android:layout_height="40dp">
+      </com.fantastic3.thebeautiful.widgets.MyImageview>
+        <ImageView
+            android:id="@+id/image_v"
+            android:layout_alignRight="@id/anchors_head"
+            android:layout_alignBottom="@id/anchors_head"
+            android:src="@mipmap/btn_view_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/anchors_name"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="小Queue"
+            android:layout_toRightOf="@id/anchors_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+           android:id="@+id/watch_num"
+            android:drawableLeft="@drawable/view_video_order"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="5546"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/live_img"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test"
+            android:layout_below="@id/anchors_head"
+            android:layout_width="match_parent"
+            android:layout_height="170dp" />
+        <TextView
+            android:id="@+id/live_content"
+            android:gravity="center_vertical"
+            android:text="双十一大优惠"
+            android:background="#8e313030"
+            android:layout_alignBottom="@id/live_img"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+        <ImageView
+           android:id="@+id/can_play"
+            android:src="@drawable/btn_play_live"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/version/getVersionInfo.do HTTP/1.1
+Content-Length: 118
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+versionId=100023&type=1&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&versionNum=100023&operatorUid=&reqTime=1447056687564
+
+----------------------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:11:27 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"已经是最新版本了~","status":9999}

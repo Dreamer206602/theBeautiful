@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/tag/get.do HTTP/1.1
+Content-Length: 161
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+pageSize=8&versionId=100023&category=1&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&pageNum=1&operatorUid=48d2b904-a291-4591-baa3-696c53b003f5&reqTime=1447072713216
+
+-----------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 12:38:33 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"成功","status":0,"data":{"tagList":[{"id":"df12a45b-58fa-46ab-b237-c754a83704b5","tag_name":"试用报告"},{"id":"cdf0b03e-2b42-4b73-9d24-34beee690cb4","tag_name":"晒图"},{"id":"a3a0e111-1290-41c4-84ff-7cfd0f9d6658","tag_name":"社区活动"},{"id":"9b2778c9-8641-4cae-9c48-12d42142008c","tag_name":"护肤"},{"id":"42f029a1-dc2d-4422-903c-bef6a89682be","tag_name":"买家秀"},{"id":"3132749f-e74b-4edb-a8a1-43d943a3f3ef","tag_name":"战痘特训营"},{"id":"1edb3df3-9bcc-4f3c-aaaf-5bb2aea0a669","tag_name":"中奖名单"},{"id":"1d5af13f-7e21-4cec-b5b2-2729baaef23e","tag_name":"大美人试用团"}]}}

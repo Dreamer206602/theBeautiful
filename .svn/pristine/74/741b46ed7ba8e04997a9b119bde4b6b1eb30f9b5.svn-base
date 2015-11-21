@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+   >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        >
+
+        <!-- 上部分-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F0F"
+        android:layout_gravity="top"
+        android:orientation="horizontal"
+       >
+      <TextView
+          android:background="@mipmap/btn_video_back"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          />
+
+        <TextView
+            android:background="@mipmap/btn_video_topshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:background="@mipmap/btn_video_topstar"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+        <!-- VideoView-->
+        <VideoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- 下部分-->
+        <LinearLayout
+            android:background="#212021"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:button="@null"
+                android:background="@drawable/video_playor_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <SeekBar
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_gravity="center"
+                android:background="@mipmap/btn_video_screenfull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+       <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        >
+
+        <!-- 个人的头像 圆角图片-->
+        <ImageView
+            android:id="@+id/video_frg_new_frg_detail_pic"
+            android:src="@mipmap/beautiful"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 个人的昵称-->
+        <TextView
+            android:id="@+id/video_frg_new_frg_detail_tv_nickName"
+            android:layout_toEndOf="@id/video_frg_new_frg_detail_pic"
+            android:layout_toRightOf="@id/video_frg_new_frg_detail_pic"
+            android:text="阿Fi头"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- 个人的级别-->
+        <TextView
+            android:id="@+id/video_frg_new_frg_detail_tv_level"
+            android:layout_toRightOf="@id/video_frg_new_frg_detail_tv_nickName"
+            android:text="LEV12"
+            android:background="#b611a0"
+            android:textColor="@color/white"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <!-- 时间-->
+        <TextView
+            android:id="@+id/video_frg_new_frg_detail_tv_time"
+            android:layout_below="@id/video_frg_new_frg_detail_tv_nickName"
+            android:layout_toRightOf="@id/video_frg_new_frg_detail_pic"
+            android:text="昨天"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/btn_classroom_unattention"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/horizontal_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+        <RadioButton
+            android:button="@null"
+            android:text="详情.评价"
+            android:checked="true"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:drawableBottom="@drawable/video_frg_detail_radiobutton"/>
+
+        <RadioButton
+            android:button="@null"
+            android:text="推荐商品"
+            android:gravity="center"
+            android:checked="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/video_frg_detail_radiobutton"/>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/horizontal_line"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+       >
+
+        <ImageView
+            android:src="@mipmap/btn_classroom_whitelog_addface"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="我要评论"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/btn_daren_artice_edit"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:background="@mipmap/btn_wd_shaitu_addtag_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

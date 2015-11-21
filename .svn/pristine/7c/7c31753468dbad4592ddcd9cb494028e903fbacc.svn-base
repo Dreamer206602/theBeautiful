@@ -1,0 +1,34 @@
+package com.fantastic3.thebeautiful.fragments;
+
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import com.fantastic3.thebeautiful.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ */
+
+/**
+ * 热门的fragment
+ */
+public class HotFragment extends BaseFragment {
+
+
+    public HotFragment() {
+    }
+
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View ret=inflater.inflate(R.layout.fragment_hot, container, false);
+        return ret;
+    }
+
+
+}

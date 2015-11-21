@@ -1,0 +1,17 @@
+POST http://app.dameiren.com/video/live/logNowViewers.do HTTP/1.1
+Content-Length: 146
+Content-Type: application/x-www-form-urlencoded
+Host: app.dameiren.com
+Connection: Keep-Alive
+
+versionId=100023&deviceId=567C86BF401A7F59C1F12CF75E8E37E2&isAdd=1&videoId=18e8a091-c250-45b0-99b3-9b71b99c7816&operatorUid=&reqTime=1447057836919
+
+---------------------------------------------------------------------------------------------
+
+HTTP/1.1 200 OK
+Date: Mon, 09 Nov 2015 08:30:37 GMT
+Access-Control-Allow-Origin: *
+Content-Type: text/html;charset=UTF-8
+Connection: close
+
+{"message":"成功","status":0}
